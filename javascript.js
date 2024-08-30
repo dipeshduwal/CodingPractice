@@ -22,3 +22,26 @@ content2.textContent="I'm a blue h3";
 content2.style.cssText="color: blue;";
 
 container.appendChild(content2);
+
+//a <div> with a black border and pink background color with the following elements inside of it:
+//1. another <h1> that says “I’m in a div”
+//2. a <p> that says “ME TOO!”
+
+
+
+const content3 =document.createElement("div");
+content3.classList.add("content3");
+content3.style.cssText="border: 2px solid black; background-color: pink";
+
+const content4 = document.createElement("h1");
+content4.classList.add("content4");
+content4.textContent="I'm in a div.";
+
+const content5= document.createElement("p");
+content5.classList.add("content5");
+content5.textContent="Me TOO!";
+
+content3.appendChild(content4);
+content3.appendChild(content5);
+
+container.appendChild(content3);
