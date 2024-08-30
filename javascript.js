@@ -16,3 +16,9 @@ content1.style.color= "red";
 container.appendChild(content1);
 
 //an <h3> with blue text that says “I’m a blue h3!”
+const content2= document.createElement("h3");
+content2.classList.add("content2");
+content2.textContent="I'm a blue h3";
+content2.style.cssText="color: blue;";
+
+container.appendChild(content2);
