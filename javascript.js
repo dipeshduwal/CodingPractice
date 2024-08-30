@@ -45,3 +45,13 @@ content3.appendChild(content4);
 content3.appendChild(content5);
 
 container.appendChild(content3);
+
+//attaching event to a button
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+  const btn = document.querySelector("#btn");
+
+  btn.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+  });
