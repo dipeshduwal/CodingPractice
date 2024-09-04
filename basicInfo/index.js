@@ -9,5 +9,14 @@ const page404 = fs.readFileSync("404.html", "utf-8",(err,data)=>{
     return data;
 })
 
-
+http.createServer(function(req,res){
+    const q = url.parse(req.url, true);
+    let filename = "";
+    if (q.pathname === "/"){
+        filename = "." + "/index.html";
+    } else {
+        filename = "." + q.pathname;
+    }
+    
+})
 
